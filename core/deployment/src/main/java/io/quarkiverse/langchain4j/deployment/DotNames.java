@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletionStage;
 
+import dev.langchain4j.agent.tool.Tool;
 import jakarta.enterprise.inject.Instance;
 
 import org.jboss.jandex.DotName;
@@ -54,4 +55,5 @@ public class DotNames {
     public static final DotName CDI_INSTANCE = DotName.createSimple(Instance.class);
 
     public static final DotName CHAT_MODEL_LISTENER = DotName.createSimple(ChatModelListener.class);
+    public static final DotName TOOL = DotName.createSimple(Tool.class);
 }
